@@ -55,4 +55,7 @@ Muhammad Fahad
 ## ⭐ Show Your Support
 
 If you like this project, consider giving it a star on GitHub!
+
+
+
 ![Calculator Screenshot](calculator-screenshot.png)
