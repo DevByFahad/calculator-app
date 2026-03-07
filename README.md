@@ -56,6 +56,10 @@ Muhammad Fahad
 
 If you like this project, consider giving it a star on GitHub!
 
+## 🧮 Calculator App
+
+Here’s what it looks like 👇
+
 
 
 ![Calculator Screenshot](calculator-screenshot.png)
