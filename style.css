@@ -1,0 +1,160 @@
+/* Reset & Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+}
+
+/* Calculator Container */
+.calculator-container {
+    padding: 20px;
+}
+
+/* Calculator Card */
+.calculator {
+    width: 350px;
+    background: rgba(30, 30, 30, 0.85);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 10px 40px rgba(255, 255, 0, 0.25);
+}
+
+/* Display */
+.display {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: right;
+    color: #fff;
+    box-shadow: inset 0 0 10px rgba(255, 255, 0, 0.2);
+}
+
+.history {
+    font-size: 14px;
+    color: #ffd700;
+    min-height: 18px;
+    letter-spacing: 0.5px;
+}
+
+.output {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff200;
+    word-wrap: break-word;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Buttons Layout */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+/* Button Style */
+.btn {
+    padding: 18px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background: #1a1a1a;
+    color: #ffd700;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+/* Button Ripple Animation */
+.btn::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 0, 0.3);
+    display: block;
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.5s, opacity 1s;
+}
+
+.btn:active::after {
+    transform: scale(3);
+    opacity: 1;
+    transition: 0s;
+}
+
+/* Hover */
+.btn:hover {
+    background: #333333;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 255, 0, 0.3);
+}
+
+/* Operators */
+.operator {
+    background: #ffd700;
+    color: #000;
+    font-weight: 600;
+}
+
+.operator:hover {
+    background: #e6c200;
+}
+
+/* Equal button */
+.equal {
+    background: #ffea00;
+    color: #000;
+    grid-row: span 2;
+    font-weight: 700;
+}
+
+.equal:hover {
+    background: #e6d500;
+}
+
+/* Zero button */
+.zero {
+    grid-column: span 2;
+}
+
+/* Actions */
+.action {
+    background: #ff4500;
+    color: #fff;
+}
+
+.action:hover {
+    background: #e03e00;
+}
+
+/* Responsive */
+@media(max-width:400px) {
+    .calculator {
+        width: 90%;
+    }
+
+    .btn {
+        padding: 16px;
+        font-size: 18px;
+    }
+
+    .output {
+        font-size: 28px;
+    }
+}
