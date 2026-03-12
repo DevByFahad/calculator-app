@@ -3,7 +3,7 @@
 A simple and responsive calculator web application that performs basic arithmetic operations such as addition, subtraction, multiplication, and division. This project is built using HTML, CSS, and JavaScript and demonstrates basic front-end development skills.
 
 ---
-🔗 Live Demo: https://DevByFahad.github.io/calculator-app/
+🔗 Live Demo:[ https://DevByFahad.github.io/calculator-app/](https://devbyfahad.github.io/Calculator-app/)
 
 
 ## 📌 Features
